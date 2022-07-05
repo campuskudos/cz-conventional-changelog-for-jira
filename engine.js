@@ -178,7 +178,8 @@ module.exports = function(options) {
           type: 'confirm',
           name: 'isBreaking',
           message: 'Are there any breaking changes?',
-          default: false
+          default: false,
+          when: !options.skipBreaking
         },
         {
           type: 'confirm',
@@ -187,8 +188,7 @@ module.exports = function(options) {
           default: false,
           when: function(answers) {
             return answers.isBreaking;
-          },
-          when: !options.skipBreaking
+          }
         },
         {
           type: 'input',
