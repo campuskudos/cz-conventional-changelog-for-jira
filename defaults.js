@@ -15,4 +15,5 @@ module.exports = {
   jiraAppend: '',
   jiraSeparator: ' ',
   exclamationMark: false,
+  skipBreaking: false,
 };

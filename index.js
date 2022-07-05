@@ -96,6 +96,11 @@ const options = {
     config.exclamationMark,
     defaults.exclamationMark
   ),
+  skipBreaking: getEnvOrConfig(
+    process.env.CZ_SKIP_BREAKING,
+    config.skipBreaking,
+    defaults.skipBreaking
+  ),
 };
 
 (function(options) {

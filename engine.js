@@ -187,7 +187,8 @@ module.exports = function(options) {
           default: false,
           when: function(answers) {
             return answers.isBreaking;
-          }
+          },
+          when: !options.skipBreaking
         },
         {
           type: 'input',

@@ -64,6 +64,7 @@ Like commitizen, you can specify the configuration of cz-conventional-changelog-
 | CZ_JIRA_APPEND       | jiraAppend      | ""                | Appends JIRA ID with an optional decorator. e.g.: `DAZ-1234]`
 | CZ_JIRA_SEPARATOR    | jiraSeparator   | " "                | Separate JIRA ID with an optional decorator. e.g.: `DAZ-1234:feat`                                                                                                           |
 | CZ_EXCLAMATION_MARK  | exclamationMark | false             | On breaking changes, adds an exclamation mark (!) after the scope, e.g.: `type(scope)!: break stuff`. When activated, reduces the effective allowed header length by 1. |
+| CZ_SKIP_BREAKING     | skipBreaking    | false             | If true then skip asking for the breaking change prompt
 
 ### Jira Location Options
 
@@ -159,6 +160,7 @@ List of all supported configurable options when using the _configurable_ approac
 | jiraAppend      | ""                | Appends JIRA ID with an optional decorator. e.g.: `DAZ-1234]`                                                                                                                                                                                |
 | jiraSeparator   | " "               | Separate JIRA ID with an optional decorator. e.g.: `DAZ-1234:feat`  |
 | exclamationMark | false             | On breaking changes, adds an exclamation mark (!) after the scope, e.g.: `type(scope)!: break stuff`. When activated, reduces the effective allowed header length by 1.                                                                      |
+| skipBreaking    | false             | If true then skip asking for the breaking change prompt                                                                                                                                                                   |
 
 
 ### Commitlint
